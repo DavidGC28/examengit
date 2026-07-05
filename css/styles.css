@@ -1,26 +1,55 @@
-/* css/styles.css */
-body { 
-    font-family: sans-serif; 
-    line-height: 1.6; 
-    margin: 0;
-    padding: 0;
+/* ===== ESTILOS GENERALES ===== */
+body{
+    background:#f5f7fa;
+    font-family:Arial, Helvetica, sans-serif;
+}
+/* ===== HEADER ===== */
+header{
+    border-bottom:5px solid #0d6efd;
+}
+header h1{
+    letter-spacing:1px;
+}
+.nav-link{
+    transition:.3s;
+    border-radius:8px;
+}
+.nav-link:hover{
+    background:rgba(255,255,255,.2);
+}
+/* ===== MAIN ===== */
+main{
+    min-height:70vh;
+}
+main h2{
+    font-weight:bold;
+    color:#0d6efd;
+}
+main p{
+    color:#555;
+}
+/* ===== CONTENEDOR DE OFERTAS ===== */
+#contenedor-destacados{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+/* Las tarjetas que agreguen los integrantes */
+#contenedor-destacados .card{
+    border:none;
+    border-radius:15px;
+    transition:.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+#contenedor-destacados .card:hover{
+    transform:translateY(-8px);
 }
 
-header { 
-    background: #333; 
-    color: white; 
-    padding: 1rem; 
+/* ===== FOOTER ===== */
+footer{
+    margin-top:40px;
 }
-
-/* AQUÍ: Cada estudiante debe agregar sus estilos para su tarjeta y cambios de color global */
-#contenedor-destacados { 
-    display: flex; 
-    gap: 20px; 
-    padding: 20px;
-}
-
-.card {
-    border: 1px solid #ccc;
-    padding: 10px;
-    border-radius: 5px;
+footer p{
+    margin:0;
 }
